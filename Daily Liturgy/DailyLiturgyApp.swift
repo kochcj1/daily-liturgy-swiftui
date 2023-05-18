@@ -6,12 +6,21 @@
 //
 
 import SwiftUI
+import AVFoundation
 
 @main
 struct DailyLiturgyApp: App {
     var body: some Scene {
         WindowGroup {
-            SplashView()
+            SplashView().onAppear {
+                do {
+                    try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playback, mode: AVAudioSession.Mode.default, options: [])
+                    try AVAudioSession.sharedInstance().setActive(true)
+                }
+                catch {
+                    print(error)
+                }
+            }
         }
     }
 }
