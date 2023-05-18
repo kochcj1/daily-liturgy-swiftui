@@ -7,18 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B400A5502A10F0E300BAC295 /* Daily_LiturgyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B400A54F2A10F0E300BAC295 /* Daily_LiturgyApp.swift */; };
+		B400A5502A10F0E300BAC295 /* DailyLiturgyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B400A54F2A10F0E300BAC295 /* DailyLiturgyApp.swift */; };
 		B400A5522A10F0E300BAC295 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B400A5512A10F0E300BAC295 /* ContentView.swift */; };
 		B400A5542A10F0E600BAC295 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B400A5532A10F0E600BAC295 /* Assets.xcassets */; };
 		B400A5572A10F0E600BAC295 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B400A5562A10F0E600BAC295 /* Preview Assets.xcassets */; };
+		B408E0652A110415001A5EB8 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = B408E0642A110415001A5EB8 /* Card.swift */; };
+		B4307E982A1598C600E91EFB /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4307E972A1598C600E91EFB /* SplashView.swift */; };
+		B4307E9A2A159D5B00E91EFB /* AudioPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4307E992A159D5B00E91EFB /* AudioPlayerView.swift */; };
+		B4307E9C2A15A1BA00E91EFB /* PlayPauseAudioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4307E9B2A15A1BA00E91EFB /* PlayPauseAudioButton.swift */; };
+		B4307E9E2A15AA8C00E91EFB /* SeekButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4307E9D2A15AA8C00E91EFB /* SeekButton.swift */; };
+		B4307EA02A15C3DD00E91EFB /* LiturgyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4307E9F2A15C3DD00E91EFB /* LiturgyView.swift */; };
+		B4C35BC22A11AA49005FBD04 /* ReadingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C35BC12A11AA49005FBD04 /* ReadingCard.swift */; };
+		B4C36A472A11AF1B009EE5EA /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C36A462A11AF1B009EE5EA /* WebView.swift */; };
+		B4C36A492A11B506009EE5EA /* NavigationBarModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C36A482A11B506009EE5EA /* NavigationBarModifier.swift */; };
+		B4D65EB22A1121470018D97F /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = B4D65EB12A1121470018D97F /* SwiftSoup */; };
+		B4F568832A112E7400A5D3E2 /* Liturgy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F568822A112E7400A5D3E2 /* Liturgy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B400A54C2A10F0E300BAC295 /* Daily Liturgy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Daily Liturgy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B400A54F2A10F0E300BAC295 /* Daily_LiturgyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Daily_LiturgyApp.swift; sourceTree = "<group>"; };
+		B400A54F2A10F0E300BAC295 /* DailyLiturgyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyLiturgyApp.swift; sourceTree = "<group>"; };
 		B400A5512A10F0E300BAC295 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B400A5532A10F0E600BAC295 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B400A5562A10F0E600BAC295 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B408E0642A110415001A5EB8 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		B4307E972A1598C600E91EFB /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		B4307E992A159D5B00E91EFB /* AudioPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerView.swift; sourceTree = "<group>"; };
+		B4307E9B2A15A1BA00E91EFB /* PlayPauseAudioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayPauseAudioButton.swift; sourceTree = "<group>"; };
+		B4307E9D2A15AA8C00E91EFB /* SeekButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeekButton.swift; sourceTree = "<group>"; };
+		B4307E9F2A15C3DD00E91EFB /* LiturgyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiturgyView.swift; sourceTree = "<group>"; };
+		B4C35BC12A11AA49005FBD04 /* ReadingCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingCard.swift; sourceTree = "<group>"; };
+		B4C36A462A11AF1B009EE5EA /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		B4C36A482A11B506009EE5EA /* NavigationBarModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarModifier.swift; sourceTree = "<group>"; };
+		B4F568822A112E7400A5D3E2 /* Liturgy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Liturgy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4D65EB22A1121470018D97F /* SwiftSoup in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,6 +57,7 @@
 		B400A5432A10F0E300BAC295 = {
 			isa = PBXGroup;
 			children = (
+				B4794C9E2A111D3500C33600 /* Packages */,
 				B400A54E2A10F0E300BAC295 /* Daily Liturgy */,
 				B400A54D2A10F0E300BAC295 /* Products */,
 			);
@@ -51,10 +74,20 @@
 		B400A54E2A10F0E300BAC295 /* Daily Liturgy */ = {
 			isa = PBXGroup;
 			children = (
-				B400A54F2A10F0E300BAC295 /* Daily_LiturgyApp.swift */,
+				B400A54F2A10F0E300BAC295 /* DailyLiturgyApp.swift */,
 				B400A5512A10F0E300BAC295 /* ContentView.swift */,
 				B400A5532A10F0E600BAC295 /* Assets.xcassets */,
 				B400A5552A10F0E600BAC295 /* Preview Content */,
+				B408E0642A110415001A5EB8 /* Card.swift */,
+				B4C35BC12A11AA49005FBD04 /* ReadingCard.swift */,
+				B4F568822A112E7400A5D3E2 /* Liturgy.swift */,
+				B4C36A462A11AF1B009EE5EA /* WebView.swift */,
+				B4C36A482A11B506009EE5EA /* NavigationBarModifier.swift */,
+				B4307E972A1598C600E91EFB /* SplashView.swift */,
+				B4307E992A159D5B00E91EFB /* AudioPlayerView.swift */,
+				B4307E9B2A15A1BA00E91EFB /* PlayPauseAudioButton.swift */,
+				B4307E9D2A15AA8C00E91EFB /* SeekButton.swift */,
+				B4307E9F2A15C3DD00E91EFB /* LiturgyView.swift */,
 			);
 			path = "Daily Liturgy";
 			sourceTree = "<group>";
@@ -65,6 +98,13 @@
 				B400A5562A10F0E600BAC295 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B4794C9E2A111D3500C33600 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Packages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +123,9 @@
 			dependencies = (
 			);
 			name = "Daily Liturgy";
+			packageProductDependencies = (
+				B4D65EB12A1121470018D97F /* SwiftSoup */,
+			);
 			productName = "Daily Liturgy";
 			productReference = B400A54C2A10F0E300BAC295 /* Daily Liturgy.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +154,9 @@
 				Base,
 			);
 			mainGroup = B400A5432A10F0E300BAC295;
+			packageReferences = (
+				B4D65EB02A1121470018D97F /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+			);
 			productRefGroup = B400A54D2A10F0E300BAC295 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +183,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4F568832A112E7400A5D3E2 /* Liturgy.swift in Sources */,
+				B4307E9E2A15AA8C00E91EFB /* SeekButton.swift in Sources */,
+				B4307E9C2A15A1BA00E91EFB /* PlayPauseAudioButton.swift in Sources */,
+				B4307E982A1598C600E91EFB /* SplashView.swift in Sources */,
+				B4307E9A2A159D5B00E91EFB /* AudioPlayerView.swift in Sources */,
+				B4C36A492A11B506009EE5EA /* NavigationBarModifier.swift in Sources */,
 				B400A5522A10F0E300BAC295 /* ContentView.swift in Sources */,
-				B400A5502A10F0E300BAC295 /* Daily_LiturgyApp.swift in Sources */,
+				B4C35BC22A11AA49005FBD04 /* ReadingCard.swift in Sources */,
+				B4C36A472A11AF1B009EE5EA /* WebView.swift in Sources */,
+				B408E0652A110415001A5EB8 /* Card.swift in Sources */,
+				B400A5502A10F0E300BAC295 /* DailyLiturgyApp.swift in Sources */,
+				B4307EA02A15C3DD00E91EFB /* LiturgyView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +323,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Daily Liturgy/Preview Content\"";
+				DEVELOPMENT_TEAM = 7522S887VY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -295,6 +352,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Daily Liturgy/Preview Content\"";
+				DEVELOPMENT_TEAM = 7522S887VY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -337,6 +395,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B4D65EB02A1121470018D97F /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B4D65EB12A1121470018D97F /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B4D65EB02A1121470018D97F /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B400A5442A10F0E300BAC295 /* Project object */;
 }
