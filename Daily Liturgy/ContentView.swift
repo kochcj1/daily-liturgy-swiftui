@@ -8,10 +8,6 @@
 import SwiftUI
 import AVFoundation
 
-// TODO:
-//   - iPad support
-//   - TestFlight
-
 struct ContentView: View {
     private let liturgy: Liturgy
     
@@ -49,7 +45,9 @@ struct ContentView: View {
                         }
                     }
                 }
-            }.accentColor(.white)
+            }
+            .accentColor(.white)
+            .navigationViewStyle(StackNavigationViewStyle())
             
             // Outside the navigation view so that the user can play/pause audio while reading the passage of Scripture:
             AudioPlayerView(url: URL(string: liturgy.audioUrl!)!)
