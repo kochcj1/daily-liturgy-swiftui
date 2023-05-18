@@ -74,20 +74,12 @@
 		B400A54E2A10F0E300BAC295 /* Daily Liturgy */ = {
 			isa = PBXGroup;
 			children = (
+				B4A2C4F42A16E5050089972B /* modifiers */,
+				B4A2C4F32A16E4C60089972B /* models */,
+				B4A2C4F22A16E4AB0089972B /* views */,
 				B400A54F2A10F0E300BAC295 /* DailyLiturgyApp.swift */,
-				B400A5512A10F0E300BAC295 /* ContentView.swift */,
 				B400A5532A10F0E600BAC295 /* Assets.xcassets */,
 				B400A5552A10F0E600BAC295 /* Preview Content */,
-				B408E0642A110415001A5EB8 /* Card.swift */,
-				B4C35BC12A11AA49005FBD04 /* ReadingCard.swift */,
-				B4F568822A112E7400A5D3E2 /* Liturgy.swift */,
-				B4C36A462A11AF1B009EE5EA /* WebView.swift */,
-				B4C36A482A11B506009EE5EA /* NavigationBarModifier.swift */,
-				B4307E972A1598C600E91EFB /* SplashView.swift */,
-				B4307E992A159D5B00E91EFB /* AudioPlayerView.swift */,
-				B4307E9B2A15A1BA00E91EFB /* PlayPauseAudioButton.swift */,
-				B4307E9D2A15AA8C00E91EFB /* SeekButton.swift */,
-				B4307E9F2A15C3DD00E91EFB /* LiturgyView.swift */,
 			);
 			path = "Daily Liturgy";
 			sourceTree = "<group>";
@@ -105,6 +97,38 @@
 			children = (
 			);
 			name = Packages;
+			sourceTree = "<group>";
+		};
+		B4A2C4F22A16E4AB0089972B /* views */ = {
+			isa = PBXGroup;
+			children = (
+				B400A5512A10F0E300BAC295 /* ContentView.swift */,
+				B408E0642A110415001A5EB8 /* Card.swift */,
+				B4C35BC12A11AA49005FBD04 /* ReadingCard.swift */,
+				B4C36A462A11AF1B009EE5EA /* WebView.swift */,
+				B4307E972A1598C600E91EFB /* SplashView.swift */,
+				B4307E992A159D5B00E91EFB /* AudioPlayerView.swift */,
+				B4307E9B2A15A1BA00E91EFB /* PlayPauseAudioButton.swift */,
+				B4307E9D2A15AA8C00E91EFB /* SeekButton.swift */,
+				B4307E9F2A15C3DD00E91EFB /* LiturgyView.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		B4A2C4F32A16E4C60089972B /* models */ = {
+			isa = PBXGroup;
+			children = (
+				B4F568822A112E7400A5D3E2 /* Liturgy.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		B4A2C4F42A16E5050089972B /* modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				B4C36A482A11B506009EE5EA /* NavigationBarModifier.swift */,
+			);
+			path = modifiers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
