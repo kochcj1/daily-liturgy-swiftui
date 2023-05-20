@@ -72,6 +72,7 @@ struct ContentView: View {
                 Text("Icons used courtesy of https://icons8.com.").accentColor(.blue)
                 Spacer()
             }
+            .frame(maxWidth: .infinity)
             .padding()
             .background(Rectangle().foregroundColor(Color(.systemGray6)))
             .navigationTitle("About the App")
