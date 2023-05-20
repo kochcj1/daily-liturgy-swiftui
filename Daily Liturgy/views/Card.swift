@@ -26,6 +26,7 @@ struct Card: View {
                     .fontWeight(.bold)
             }
             Text(description)
+            HStack { Spacer() } // causes the card to expand to fill the available horizontal space
         }
         .padding()
         .background(Rectangle()
