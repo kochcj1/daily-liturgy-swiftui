@@ -21,7 +21,7 @@ struct DailyLiturgyApp: App {
                 catch {
                     print(error)
                 }
-            }
+            }.preferredColorScheme(.light) // opt out of dark mode
         }
     }
 }
