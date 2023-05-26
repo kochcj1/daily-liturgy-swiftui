@@ -10,6 +10,9 @@ import AVFoundation
 
 @main
 struct DailyLiturgyApp: App {
+    
+    static let SHOULD_SHOW_AUDIO_PLAYER_SETTING_NAME = "shouldShowAudioPlayer"
+    
     var body: some Scene {
         WindowGroup {
             SplashView().onAppear {
@@ -21,7 +24,11 @@ struct DailyLiturgyApp: App {
                 catch {
                     print(error)
                 }
-            }.preferredColorScheme(.light) // opt out of dark mode
+            }
+            .preferredColorScheme(.light) // opt out of dark mode
+            .onAppear {
+                UserDefaults.standard.register(defaults: [DailyLiturgyApp.SHOULD_SHOW_AUDIO_PLAYER_SETTING_NAME : true])
+            }
         }
     }
 }

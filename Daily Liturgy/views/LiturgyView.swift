@@ -9,9 +9,11 @@ import SwiftUI
 
 struct LiturgyView: View {
     private let liturgy: Liturgy
+    private let showBottomSpacer: Bool
 
-    init(liturgy: Liturgy) {
+    init(liturgy: Liturgy, showBottomSpacer: Bool) {
         self.liturgy = liturgy
+        self.showBottomSpacer = showBottomSpacer
     }
     
     var body: some View {
@@ -25,7 +27,9 @@ struct LiturgyView: View {
             ReadingCard(title: "Psalm Reading", passage: liturgy.psalmReading!)
             Card(title: "Prayer of Consecration", description: liturgy.prayerOfConsecration!, icon: "icons8-pray-64")
             Card(title: "Benediction", description: liturgy.benediction, icon: "icons8-gift-96")
-            Spacer(minLength: 25)
+            if (showBottomSpacer) {
+                Spacer(minLength: 25)
+            }
         }.padding().padding()
     }
 }

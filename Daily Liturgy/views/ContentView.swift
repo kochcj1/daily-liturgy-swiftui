@@ -10,6 +10,9 @@ import SwiftUI
 struct ContentView: View {
     private let liturgy: Liturgy
     
+    @State private var shouldShowSettingsView = false
+    @State private var shouldShowAudioPlayer = UserDefaults.standard.bool(forKey: DailyLiturgyApp.SHOULD_SHOW_AUDIO_PLAYER_SETTING_NAME)
+    
     @State private var shouldShowAboutPodcastView = false
     @State private var shouldShowAboutAppView = false
 
@@ -25,10 +28,11 @@ struct ContentView: View {
                     // We want the toolbar menu to be able open up views, but the toolbar menu isn't a descendant
                     // of our navigation view, so we stick these navigation links somewhere and then trigger them
                     // via a menu-initiated state change:
+                    getShowSettingsNavigationLink()
                     getAboutPodcastNavigationLink()
                     getAboutAppNavigationLink()
                     
-                    LiturgyView(liturgy: liturgy)
+                    LiturgyView(liturgy: liturgy, showBottomSpacer: shouldShowAudioPlayer)
                 }
                 .background(Rectangle().foregroundColor(Color(.systemGray6)))
                 .navigationTitle(liturgy.title!)
@@ -36,6 +40,9 @@ struct ContentView: View {
                 .navigationBarColor(.brown)
                 .toolbar {
                     Menu("More") {
+                        Button("Settings") {
+                            shouldShowSettingsView = true
+                        }
                         Button("About The Daily Liturgy Podcast") {
                             shouldShowAboutPodcastView = true
                         }
@@ -48,9 +55,33 @@ struct ContentView: View {
             .accentColor(.white)
             .navigationViewStyle(StackNavigationViewStyle())
             
-            // Outside the navigation view so that the user can play/pause audio while reading the passage of Scripture:
-            AudioPlayerView(url: URL(string: liturgy.audioUrl!)!)
+            if (shouldShowAudioPlayer) {
+                // Outside the navigation view so that the user can play/pause audio while reading the passage of Scripture:
+                AudioPlayerView(url: URL(string: liturgy.audioUrl!)!)
+            }
         }.frame(maxWidth: .infinity)
+    }
+    
+    private func getShowSettingsNavigationLink() -> some View {
+        return NavigationLink(isActive: $shouldShowSettingsView) {
+            VStack {
+                Toggle(isOn: $shouldShowAudioPlayer) {
+                    Text("Show audio player")
+                }
+                .onChange(of: shouldShowAudioPlayer) { newValue in
+                    UserDefaults.standard.set(shouldShowAudioPlayer, forKey: DailyLiturgyApp.SHOULD_SHOW_AUDIO_PLAYER_SETTING_NAME)
+                }
+                Spacer()
+            }
+            .frame(maxWidth: .infinity)
+            .padding()
+            .background(Rectangle().foregroundColor(Color(.systemGray6)))
+            .navigationTitle("Settings")
+            .navigationBarTitleDisplayMode(.inline)
+            .navigationBarColor(.brown)
+        } label: {
+            EmptyView()
+        }
     }
     
     private func getAboutPodcastNavigationLink() -> some View {
